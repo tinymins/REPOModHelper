@@ -182,16 +182,16 @@ namespace REPOModHelperArchiver
                 targetFile = $"{Properties.Settings.Default.CustomBaseName}.exe";
             }
 
-            // Add static files
-            string staticPath = Path.Combine(currentDirectory, "Static");
-            if (File.Exists(staticPath))
+            // Add assets files
+            string assetsPath = Path.Combine(currentDirectory, "Assets");
+            if (File.Exists(assetsPath))
             {
-                string[] staticFiles = Directory.GetFiles(staticPath);
+                string[] staticFiles = Directory.GetFiles(assetsPath);
                 foreach (var fileName in staticFiles)
                 {
                     filePaths.Add(fileName);
                 }
-                string[] staticDirectories = Directory.GetDirectories(staticPath);
+                string[] staticDirectories = Directory.GetDirectories(assetsPath);
                 foreach (var fileName in staticDirectories)
                 {
                     filePaths.Add(fileName);
