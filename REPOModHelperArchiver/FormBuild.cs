@@ -182,14 +182,20 @@ namespace REPOModHelperArchiver
                 targetFile = $"{Properties.Settings.Default.CustomBaseName}.exe";
             }
 
-            string[] modDirectories = Directory.GetDirectories(currentDirectory);
-            foreach (var fileName in modDirectories)
+            // Add static files
+            string staticPath = Path.Combine(currentDirectory, "Static");
+            if (File.Exists(staticPath))
             {
-                if (Properties.Settings.Default.CustomBase && Directory.Exists(Path.Combine(fileName, "Base", "BepInEx")))
+                string[] staticFiles = Directory.GetFiles(staticPath);
+                foreach (var fileName in staticFiles)
                 {
-                    continue;
+                    filePaths.Add(fileName);
                 }
-                filePaths.Add(fileName);
+                string[] staticDirectories = Directory.GetDirectories(staticPath);
+                foreach (var fileName in staticDirectories)
+                {
+                    filePaths.Add(fileName);
+                }
             }
 
             // Make 7z files string
