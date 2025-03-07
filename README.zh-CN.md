@@ -15,14 +15,14 @@ https://dotnet.microsoft.com/zh-cn/download/dotnet-framework/thank-you/net48-off
 
 ## 如何制作安装包
 
-1. 在应用程序文件夹下创建你的MOD包文件夹，例如“自定义MOD包”。
-2. 在刚刚创建的“自定义MOD包”文件夹下创建“Base”文件夹，将你的MOD基础包放入其中（确保该层目录包含BepInEx文件夹），安装时将会全部复制到游戏根目录。
-3. （可选）在“自定义MOD包”文件夹下创建“Optional”文件夹，该文件夹为可选安装包，其中每个子文件夹为一个可选安装包，文件结构与基础包文件夹相同。
-4. （可选）在“自定义MOD包”文件夹下创建“README.txt”文件，编辑添加要在安装界面显示给用户的文字，保存。
-5. （可选）在“自定义MOD包”文件夹下创建“ABOUT.txt”文件，编辑输入你的个人首页网址（需要为http://或https://开头），保存。
-6. （可选）在“自定义MOD包”文件夹下创建“UPDATE.txt”文件，编辑输入MOD包更新网址（需要为http://或https://开头），保存。
-7. 将“致命公司MOD安装器.exe”、“Gameloop.Vdf.dll”、“自定义MOD包”、以及其他你想要打包进来的文件一起加入一个压缩包。
-8. 玩家打开该压缩包，双击“REPO MOD 安装器.exe”即可一键安装。
+1. 在应用程序文件夹下的“Assets”子文件夹中创建你的MOD包文件夹，例如“Assets/自定义MOD包”。
+2. 在刚刚创建的“Assets/自定义MOD包”文件夹下创建“Base”文件夹，将你的MOD基础包放入其中（确保该层目录包含BepInEx文件夹），安装时将会全部复制到游戏根目录。
+3. （可选）在“Assets/自定义MOD包”文件夹下创建“Optional”文件夹，该文件夹为可选安装包，其中每个子文件夹为一个可选安装包，文件结构与基础包文件夹相同。
+4. （可选）在“Assets/自定义MOD包”文件夹下创建“README.txt”文件，编辑添加要在安装界面显示给用户的文字，保存。
+5. （可选）在“Assets/自定义MOD包”文件夹下创建“ABOUT.txt”文件，编辑输入你的个人首页网址（需要为 http:// 或 https:// 开头），保存。
+6. （可选）在“Assets/自定义MOD包”文件夹下创建“UPDATE.txt”文件，编辑输入MOD包更新网址（需要为 http:// 或 https:// 开头），保存。
+7. 打开“REPOModHelperArchiver.exe”，保持“自定义基础MOD文件夹”复选框不勾选，点击“开始打包”按钮，将会生成一个“installer.exe”的一键安装包。
+8. 玩家双击打开该“installer.exe”一键安装包，即可一键安装。
 
 ## 截图
 
