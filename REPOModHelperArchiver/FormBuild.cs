@@ -186,15 +186,22 @@ namespace REPOModHelperArchiver
             string assetsPath = Path.Combine(currentDirectory, "Assets");
             if (Directory.Exists(assetsPath))
             {
-                string[] staticFiles = Directory.GetFiles(assetsPath);
-                foreach (var fileName in staticFiles)
+                string name = "";
+                string[] assetsFiles = Directory.GetFiles(assetsPath);
+                foreach (var fileName in assetsFiles)
                 {
                     filePaths.Add(fileName);
                 }
-                string[] staticDirectories = Directory.GetDirectories(assetsPath);
-                foreach (var fileName in staticDirectories)
+                string[] assetsDirectories = Directory.GetDirectories(assetsPath);
+                foreach (var fileName in assetsDirectories)
                 {
+                    if (Directory.Exists(Path.Combine(fileName, "Base", "BepInEx"))) {
+                        name = name == "" ? Path.GetFileName(fileName) : null;
+                    }
                     filePaths.Add(fileName);
+                }
+                if (name != null && name != "") {
+                    targetFile = $"{name}.exe";
                 }
             }
 
