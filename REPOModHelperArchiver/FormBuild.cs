@@ -184,7 +184,7 @@ namespace REPOModHelperArchiver
 
             // Add assets files
             string assetsPath = Path.Combine(currentDirectory, "Assets");
-            if (File.Exists(assetsPath))
+            if (Directory.Exists(assetsPath))
             {
                 string[] staticFiles = Directory.GetFiles(assetsPath);
                 foreach (var fileName in staticFiles)
