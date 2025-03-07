@@ -196,7 +196,7 @@ namespace REPOModHelperArchiver.I18n {
         }
 
         /// <summary>
-        ///   Looks up a localized string similar to 致命公司安装器打包程序.
+        ///   Looks up a localized string similar to R.E.P.O 安装器打包程序.
         /// </summary>
         internal static string FormMain_FormMainTitle {
             get {

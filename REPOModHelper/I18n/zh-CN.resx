@@ -130,13 +130,13 @@
     <value>错误</value>
   </data>
   <data name="FormMain/FormTitle" xml:space="preserve">
-    <value>致命公司MOD安装器 --by@茗伊</value>
+    <value>R.E.P.O MOD 安装器 --by@茗伊</value>
   </data>
   <data name="FormMain/GamePath" xml:space="preserve">
     <value>游戏文件夹</value>
   </data>
   <data name="FormMain/GamePathNotFoundError" xml:space="preserve">
-    <value>未找到致命公司安装路径！</value>
+    <value>未找到 R.E.P.O 安装路径！</value>
   </data>
   <data name="FormMain/ModFolderNotFoundError" xml:space="preserve">
     <value>找不到有效的MOD文件夹！</value>
@@ -172,7 +172,7 @@
     <value>安装成功！</value>
   </data>
   <data name="FormInstall/REPOModPack" xml:space="preserve">
-    <value>致命公司MOD包</value>
+    <value>R.E.P.O MOD包</value>
   </data>
   <data name="FormInstall/ProcessExistsError" xml:space="preserve">
     <value>REPO.exe 进程存在，请先结束游戏！</value>
